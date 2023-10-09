@@ -25,8 +25,9 @@
 // 2. Map the array of the inventors into a new array containing objects with just the first and last names as properties
 // Hint:  Return a new object literal from the callback (don't mutate the object being passed in to map)
 ////////////////////////////////////
-///const inventorEls = inventors.map((inventor) => inventor = `${inventor.first} ${inventor.last}`)
-//console.log(inventorEls);
+// const inventorEls = inventors.map((inventor) => inventor = `${inventor.first} ${inventor.last}`)
+// console.log(inventorEls);
+
 
 // Array.prototype.sort()
 // 3. Sort the inventors by birth date (year property), in ascending order
@@ -106,6 +107,15 @@
 // console.log(countInstances);
 
 
+/////// (alternate version of if/else)
+// const initialValue = {};
+
+// const countInstances = data.reduce((acc, currentItem) => { acc[currentItem] = acc[currentItem] ? acc[currentItem] + 1 : 1;
+// return acc;
+// }, {});
+
+// console.log(countInstances);
+
 
 
 
@@ -127,7 +137,7 @@
 //   return ageCheck;
 // })
 
-  //console.log(atLeastOneIs19);
+// console.log(atLeastOneIs19);
 
 // Array.prototype.every()
 // 9. Check if everyone is 19 or older?
@@ -150,17 +160,14 @@
 // Array.prototype.find()
 // 10. Find the comment with the id of 823423
 /////////////////////////////////////////////
-// const findId = comments.find((comment) => {
-//   return comment.id === 823423;
-// })
+
+// const findId = comments.find((comment) => comment.id === 823423)
 // console.log(findId);
 
 
 // Array.prototype.findIndex()
 // 11. Find the index of the comment with an id of 123523
 ///////////////////////////////////////
-// const commentIdx = comments.findIndex((comment) => {
-//   return comment.id === 123523;
-// })
+// const commentIdx = comments.findIndex((comment) => comment.id === 123523)
 
 // console.log(commentIdx);
